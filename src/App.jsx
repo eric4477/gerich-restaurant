@@ -14,10 +14,10 @@ import {
 import { Navbar } from "./components";
 
 const App = () => (
-  <div>
+  <div className="app">
     <Navbar />
-    {/* <Header />
-    <AboutUs />
+    <Header />
+    {/* <AboutUs />
     <SpecialMenu />
     <Chef />
     <Intro />

@@ -6,6 +6,8 @@
   align-items: center;
   background: var(--color-black);
   padding: 1rem 2rem;
+  max-width: 2500px;
+  margin: 0 auto;
 }
 
 .app__navbar-logo {
