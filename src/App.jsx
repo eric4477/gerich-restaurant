@@ -17,8 +17,8 @@ const App = () => (
   <div className="app">
     <Navbar />
     <Header />
-    {/* <AboutUs />
-    <SpecialMenu />
+    <AboutUs />
+    {/* <SpecialMenu />
     <Chef />
     <Intro />
     <Laurels />

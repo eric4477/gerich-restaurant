@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <Headroom>
+    <Headroom className="headroom">
       <nav className={"app__navbar"}>
         <div className="app__navbar-logo">
           <img src={images.gericht} alt="logo" />
@@ -46,6 +46,7 @@ const Navbar = () => {
             book table
           </a>
         </div>
+
         <div className="app__navbar-smallscreen">
           <GiHamburgerMenu
             className="overlay__open"
