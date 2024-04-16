@@ -18,7 +18,6 @@ const Intro = () => {
       />
 
       <div className="app__video-overlay flex__center">
-        {console.log(vidRef)}
         <div
           className="app__video-overlay_circle flex__center"
           onClick={() => {
