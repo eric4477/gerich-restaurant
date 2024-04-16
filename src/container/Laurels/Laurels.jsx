@@ -1,10 +1,31 @@
-import React from 'react';
-
-import './Laurels.css';
-
+import "./Laurels.css";
+import { images, data } from "../../constants";
+import { SubHeading, MenuItem } from "../../components";
+const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
+  <div className="app__laurels_awards-card">
+    <img src={imgUrl} alt="award" />
+    <div className="app__laurels_awards-card-content">
+      <p className="p__cormorant" style={{ color: "#DCCA87" }}>
+        {title}
+      </p>
+      <p className="p__cormorant">{subtitle}</p>
+    </div>
+  </div>
+);
 const Laurels = () => (
-  <div>
-    Laurels
+  <div id="awards" className="app__bg app__wrapper section__padding">
+    <div className="app__wrapper_info">
+      <SubHeading title={"Awards & recognition"} />
+      <h1 className="headtext__cormorant">Our Laurels</h1>
+      <div className="app__laurels_awards">
+        {data.awards.map((award) => {
+          return <AwardCard award={award} key={award.title} />;
+        })}
+      </div>
+    </div>
+    <div className="app__wrapper_img">
+      <img src={images.laurels} alt="laurels" />
+    </div>
   </div>
 );
 
