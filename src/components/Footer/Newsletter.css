@@ -46,7 +46,7 @@
 }
 @media screen and (max-width: 650px) {
   .app__newletter {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     border: none;
   }
 }

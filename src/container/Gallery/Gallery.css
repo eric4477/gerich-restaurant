@@ -3,6 +3,7 @@
   flex-direction: row;
   padding: 4rem 0 4rem 6rem;
   background-color: var(--color-black);
+  overflow-x: hidden;
 }
 
 .app__gallery-content {

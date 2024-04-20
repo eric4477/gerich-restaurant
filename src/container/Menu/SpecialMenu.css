@@ -3,6 +3,7 @@
   background: var(--color-black);
   max-width: 2500px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .app__specialMenu-title {

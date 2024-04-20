@@ -1,6 +1,7 @@
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import { useRef } from "react";
+import { useInView } from "framer-motion";
 import {
   BsInstagram,
   BsArrowLeftShort,
@@ -10,6 +11,8 @@ import {
 import "./Gallery.css";
 
 const Gallery = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   const scrollRef = useRef(null);
   const scroll = (direction) => {
     const { current } = scrollRef;
@@ -27,8 +30,16 @@ const Gallery = () => {
     images.gallery04,
   ];
   return (
-    <div className="app__gallery flex__center">
-      <div className="app__gallery-content">
+    <div ref={ref} className="app__gallery flex__center">
+      <div
+        className="app__gallery-content"
+        style={{
+          transform: isInView ? "none" : "opacity(0)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          transitionDelay: "1s",
+        }}
+      >
         <SubHeading title={"Instagram"} />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p className="p__opensans" style={{ color: "#aaa", marginTop: "2rem" }}>
@@ -39,7 +50,15 @@ const Gallery = () => {
           View More
         </button>
       </div>
-      <div className="app__gallery-images">
+      <div
+        className="app__gallery-images"
+        style={{
+          transform: isInView ? "none" : "translateX(200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          transitionDelay: "1s",
+        }}
+      >
         <div ref={scrollRef} className="app__gallery-images_container">
           {imagesArr.map((image, index) => (
             <div

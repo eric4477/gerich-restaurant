@@ -4,7 +4,11 @@ import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 import { images } from "../../constants";
 
 const Footer = () => (
-  <div className="app__footer section__padding">
+  <div
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    className="app__footer section__padding"
+  >
     <FooterOverlay />
     <Newsletter />
     <div className="app__footer-links">
