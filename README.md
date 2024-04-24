@@ -1,8 +1,28 @@
-# React + Vite
+# Gericht-Restaurant Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Gericht-Restaurant Landing Page project! This project is a responsive landing page for a fictional restaurant called Gericht-Restaurant.
+It showcases the restaurant's menu, location, and contact information in an elegant and user-friendly interface.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Preview](#preview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+
+- ## Preview
+
+- https://gericht-restaurant-snowy-three.vercel.app/
+
+- ## Features
+
+- Responsive design that adapts to various screen sizes and devices.
+- Menu section displaying the restaurant's offerings.
+- Gallery section showcasing images of the restaurant's dishes, and ambiance.
+- Contact section with a form for users to reach out to the restaurant.
+
+- ## Technologies Used
+
+- HTML: Used for structuring the content of the landing page.
+- CSS: Used for styling and layout of the page.
+- React: Used for building dynamic and interactive components.
+- Framer Motion: Used for creating animations and transitions.
